@@ -3,9 +3,9 @@
 const Categories = () => {
     return (
         <div>
-            <div>
+            <div className="w-[1700px] h-[178px] flex justify-center">
                 <div>
-                    
+                    <p className="text-white text-[30px] font-bold">Categories</p>
                 </div>
 
                 <div>
@@ -16,4 +16,4 @@ const Categories = () => {
     )
 }
 
-export default Categories
+export default Categories;

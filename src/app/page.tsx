@@ -17,13 +17,15 @@ export default function Home() {
   });
 
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen bg-neutral-700">
       <div>
-        <Header></Header>
-      </div>
+        <div>
+          <Header></Header>
+        </div>
 
-      <div>
-        <Categories></Categories>
+        <div>
+          <Categories></Categories>
+        </div>
       </div>
     </div>
   );
