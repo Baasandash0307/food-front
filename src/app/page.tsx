@@ -45,7 +45,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full h-[755px]">
+        <div className="w-full h-[755px] bg-black">
           <Footer/>
         </div>
 
