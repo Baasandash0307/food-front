@@ -1,17 +1,15 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@keyframes marquee {
+@keyframes scroll {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
-.animate-marquee {
-  display: inline-block;
-  white-space: nowrap;
-  animation: marquee 40s linear infinite;
+.animate-scroll {
+  animation: scroll 5s linear infinite;
 }
