@@ -26,7 +26,7 @@ const Header = () => {
                         </button>
                     </Link>
 
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 items-center">
                         <div className="w-[255px] h-[36px] text-[12px] bg-white rounded-2xl flex items-center justify-around">
                             <img src="/vector.png"></img>
                             <p className="text-red-500">Delivery address:</p>
