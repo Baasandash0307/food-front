@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/dialog";
 
 const ProductCard = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
 
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
@@ -70,7 +70,7 @@ const ProductCard = () => {
 
                     <div className="flex items-center gap-3">
                       <button
-                        onClick={() => setCount(count > 0 ? count - 1 : 0)}
+                        onClick={() => setCount(count > 1 ? count - 1 : 1)}
                         className="border w-9 h-9 rounded-4xl cursor-pointer"
                       >
                         -
