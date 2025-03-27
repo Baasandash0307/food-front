@@ -11,14 +11,11 @@ import {
 const ProductCard = () => {
 
 
-
     return (
         <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
             <Dialog>
                 <DialogTrigger className="ml-2.5"><div className="flex justify-center items-center">
-                    <button className="cursor-pointer">
-                        <img className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover" src="foodpic.png" alt="Food"></img>
-                    </button>
+                <img className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover" src="foodpic.png" alt="Food"></img>
                     <button className="w-11 h-11 rounded-3xl absolute bg-white text-red-500 mt-50 ml-90 cursor-pointer" type="submit">+</button>
                 </div>
                     <div className="w-[480px]">
@@ -33,7 +30,7 @@ const ProductCard = () => {
                         <DialogDescription>
                             <div className="flex gap-10">
                                 <div>
-                                    <img className="rounded-2xl object-cover" src="foodpic.png"></img>
+                                    <img className="rounded-2xl w-[600px] h-[350px] object-cove" src="foodpic.png"></img>
                                 </div>
                                 <div>
                                     <p className="flex justify-end mr-5 text-[29px] font-bold text-red-500">Finger food</p>
