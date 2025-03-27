@@ -19,7 +19,6 @@ export default function Home() {
   return (
     <div className="w-full h-screen bg-neutral-700">
       <div>
-
         <Background />
 
         <div className="w-full h-[178px] bg-neutral-700 mt-10">
@@ -57,7 +56,9 @@ export default function Home() {
 
           <div className="flex justify-center">
             <div className="w-[1700px]">
-              <p className="text-[30px] text-white font-bold">Lunch favorites</p>
+              <p className="text-[30px] text-white font-bold">
+                Lunch favorites
+              </p>
             </div>
           </div>
 
@@ -71,12 +72,11 @@ export default function Home() {
         </div>
 
         <div className="w-full h-[450px] bg-black">
-          <div className="flex items-center ">
-            <div className="w-full h-[100px] overflow-hidden whitespace-nowrap bg-red-500 text-white py-2">
-              <div className="flex w-max animate-scroll">
-                <p className="text-4xl mx-4 font-bold">Fresh fast delivered</p>
-                <p className="text-4xl mx-4 font-bold">Fresh fast delivered</p>
-              </div>
+          <div className="w-full h-20 bg-red-500 overflow-hidden whitespace-nowrap flex items-center">
+            <div className="inline-block animate-scroll text-white text-[30px] font-bold">
+              Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp; •
+              &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp; •
+              &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp;
             </div>
           </div>
 

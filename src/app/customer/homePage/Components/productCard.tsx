@@ -9,8 +9,7 @@ import {
 } from "@/components/ui/dialog";
 
 const ProductCard = () => {
-
-    const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
@@ -29,16 +28,18 @@ const ProductCard = () => {
               +
             </button>
           </div>
-          <div className="w-[480px]">
-            <div className="flex justify-between ml-5 mt-5 items-center">
+          <div className="w-[460px]">
+            <div className="flex justify-between ml-2 items-center">
               <p className="text-red-500 text-[25px] font-bold">Finger food</p>
               <p className="text-[18px] font-bold">$12.99</p>
             </div>
           </div>
-          <p className="text-[14px] ml-5">
-            Fluffy pancakes stacked with fruits, cream, syrup, and powdered
-            sugar.
-          </p>
+          <div className="w-[470px]">
+            <p className="text-[14px] mr-5">
+              Fluffy pancakes stacked with fruits, cream, syrup, and powdered
+              sugar.
+            </p>
+          </div>
         </DialogTrigger>
         <DialogContent>
           <DialogHeader>
@@ -68,17 +69,23 @@ const ProductCard = () => {
                     </div>
 
                     <div className="flex items-center gap-3">
-                      <button onClick={() => setCount(count > 0 ? count - 1 : 0)} className="border w-9 h-9 rounded-4xl cursor-pointer">
+                      <button
+                        onClick={() => setCount(count > 0 ? count - 1 : 0)}
+                        className="border w-9 h-9 rounded-4xl cursor-pointer"
+                      >
                         -
                       </button>
                       <p className="text-2xl">{count}</p>
-                      <button onClick={() => setCount(count + 1)} className="border w-9 h-9 rounded-4xl cursor-pointer">
+                      <button
+                        onClick={() => setCount(count + 1)}
+                        className="border w-9 h-9 rounded-4xl cursor-pointer"
+                      >
                         +
                       </button>
                     </div>
 
-                    <div className="w-[275px] h-[40px] bg-black mt-5 cursor-pointer border flex justify-center rounded-4xl">
-                      <button className="text-white text-[15px]">
+                    <div className="w-[275px] h-[40px] bg-black mt-5 border flex justify-center rounded-4xl">
+                      <button className="text-white text-[15px] cursor-pointer">
                         Add to cart
                       </button>
                     </div>
