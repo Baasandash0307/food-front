@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 
 const LoginPage = () => {
@@ -18,7 +20,7 @@ const LoginPage = () => {
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <button
-                            className={`w-full h-[36px] text-white outline-0 rounded-[5px] ${email ? "bg-black" : "bg-gray-300"
+                            className={`w-full h-[36px] text-white outline-0 cursor-pointer rounded-[5px] ${email ? "bg-black" : "bg-gray-300"
                                 }`}
                             type="submit"
                         >
@@ -27,12 +29,12 @@ const LoginPage = () => {
                     </div>
                     <div className="flex flex-row justify-center mt-8 gap-3">
                         <p className="text-gray-400">Already have an account?</p>
-                        <button className="text-blue-400" type="button">Log in</button>
+                        <button className="text-blue-400 cursor-pointer" type="button">Log in</button>
                     </div>
                 </div>
             </div>
             <div className="w-[940px] h-[1000px] rounded-2xl flex items-center">
-                <img src="bike.png" />
+                <img src="/bike.png" />
             </div>
         </div>
     );

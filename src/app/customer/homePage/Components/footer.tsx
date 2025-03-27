@@ -5,9 +5,9 @@ export const Footer = () => {
                 <div className="w-[46px] h-[37px]">
                     <img src="/hand.png"></img>
                 </div>
-                <div className="text-[20px] flex">
-                    <p className="text-white">Nom</p>
-                    <p className="text-red-500">Nom</p>
+                <div className="text-[20px] flex font-bold">
+                    <p className="text-white">Yum</p>
+                    <p className="text-red-500">Rush</p>
                 </div>
                 <div>
                     <p className="text-white text-[12px]">Swift delivery</p>
