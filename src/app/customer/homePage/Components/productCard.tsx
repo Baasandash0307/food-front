@@ -38,7 +38,7 @@ const ProductCard = () => {
                                 <div>
                                     <p className="flex justify-end mr-5 text-[29px] font-bold text-red-500">Finger food</p>
                                     <p className="text-[16px] mt-5">Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.</p>
-                                    
+
                                 </div>
                             </div>
                         </DialogDescription>
