@@ -23,7 +23,7 @@ export default function Home() {
 
         <Background />
 
-        <div className="w-full h-[178px] bg-neutral-700">
+        <div className="w-full h-[178px] bg-neutral-700 mt-10">
           <Categories></Categories>
         </div>
 

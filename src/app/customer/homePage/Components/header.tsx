@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 
+
 const Header = () => {
     return (
         <div>
@@ -31,10 +32,6 @@ const Header = () => {
                             <p className="text-red-500">Delivery address:</p>
                             <input className="text-gray-600 w-18 outline-none" placeholder="Add location" type="input"></input>
                             <img className="w-[5px] h-[10px]" src="/arrow.png"></img>
-                        </div>
-
-                        <div className="flex gap-4">
-                            <button className="w-9 h-9 rounded-3xl bg-white flex justify-center items-center cursor-pointer"> <img className="w-4 h-4" src="/cart.png"></img> </button>
                         </div>
                         <div>
                             <Link href={"customer/loginPage/signup"}>
