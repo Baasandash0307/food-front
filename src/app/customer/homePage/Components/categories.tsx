@@ -27,7 +27,7 @@ const Categories = () => {
                         <button
                             key={index}
                             onClick={() => setActiveIndex(index)}
-                            className={`w-auto h-[36px] rounded-2xl px-4 transition-colors ${activeIndex === index ? "bg-red-500 text-white" : "bg-white text-black"
+                            className={`w-[200px] h-[36px] rounded-2xl px-4 transition-colors ${activeIndex === index ? "bg-red-500 text-white" : "bg-white text-black"
                                 }`}
                         >
                             {category}

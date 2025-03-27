@@ -35,7 +35,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-10 bg-neutral-700 h-[500px]">
+          <div className="mt-10 bg-neutral-700 h-[1000px]">
             <div className="flex justify-center">
               <div className="w-[1700px]">
                 <Card></Card>
