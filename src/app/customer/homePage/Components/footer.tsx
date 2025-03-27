@@ -69,8 +69,8 @@ export const Footer = () => {
 
             <div className="">
                 <p className="text-gray-600">FOLLOW US</p>
-                <a href="#"><img className="w-[28px] h-[28px] mt-4" src="/facebook.png"></img></a>
-                <a href="#"><img className="w-[28px] h-[28px]" src="/instagram.png"></img></a>
+                <img className="w-[28px] h-[28px] mt-4" src="/facebook.png"></img>
+                <img className="w-[28px] h-[28px]" src="/instagram.png"></img>
             </div>
         </div>
     );
