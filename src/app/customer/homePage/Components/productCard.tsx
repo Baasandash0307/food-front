@@ -48,7 +48,7 @@ const ProductCard = () => {
                 <div>
                   <img
                     className="rounded-2xl w-[600px] h-[350px] object-cove"
-                    src="foodpic.png"
+                    src="/foodpic.png"
                   ></img>
                 </div>
                 <div>

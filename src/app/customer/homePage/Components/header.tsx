@@ -26,7 +26,7 @@ const Header = () => {
 
                     <div className="flex gap-4 items-center">
                         <div className="w-[255px] h-[36px] text-[12px] bg-white rounded-2xl flex items-center justify-around">
-                            <img src="/vector.png" alt="Vector"></img>
+                            <img src="/vector.png" alt=""></img>
                             <p className="text-red-500">Delivery address:</p>
                             <input className="text-gray-600 w-18 outline-none" placeholder="Add location" type="text"></input>
                             <img className="w-[5px] h-[10px]" src="/arrow.png" alt="Arrow"></img>
