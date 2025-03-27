@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Header from "./customer/homePage/Components/header";
 import Categories from "./customer/homePage/Components/categories";
 import Card from "./customer/homePage/Components/card";
 import Footer from "./customer/homePage/Components/footer";
