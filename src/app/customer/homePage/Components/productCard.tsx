@@ -14,7 +14,7 @@ const ProductCard = () => {
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
       <Dialog>
-        <DialogTrigger className="ml-3.5">
+        <DialogTrigger className="ml-3.5 cursor-pointer">
           <div className="flex justify-center items-center">
             <img
               className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover"
@@ -35,7 +35,7 @@ const ProductCard = () => {
             </div>
           </div>
           <div className="w-[470px]">
-            <p className="text-[14px] mr-5">
+            <p className="text-[14px] ml-2">
               Fluffy pancakes stacked with fruits, cream, syrup, and powdered
               sugar.
             </p>
