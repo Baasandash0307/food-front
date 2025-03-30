@@ -198,7 +198,7 @@ const Header = () => {
                                     </div>
                                   </div>
 
-                                  <div className="flex justify-between text-gray-500">
+                                  <div className="flex justify-between mt-4 text-gray-500">
                                     <div className="flex gap-2">
                                       <img src="/dish.png"></img>
                                       <p>Sunshine Stackers</p>
@@ -243,7 +243,7 @@ const Header = () => {
                                       </div>
                                     </div>
 
-                                    <div className="flex justify-between text-gray-500">
+                                    <div className="flex justify-between text-gray-500 mt-4">
                                       <div className="flex gap-2">
                                         <img src="/dish.png"></img>
                                         <p>Sunshine Stackers</p>
