@@ -182,14 +182,11 @@ const Header = () => {
                           <TabsContent value="password">
                             <div>
                               <div className="w-[380px] h-[760px] rounded-2xl pl-4 pr-4 pt-4 bg-white">
-                                <div>
-                                  <div>
-                                    <h1 className="text-[20px] font-bold ">
-                                      Order history
-                                    </h1>
-                                  </div>
-
-                                  <div className="flex justify-between">
+                                <h1 className="text-[20px] font-bold ">
+                                  Order history
+                                </h1>
+                                <div className="ml-2">
+                                  <div className="flex justify-between mt-5">
                                     <div className="flex text-[16px] font-bold gap-2">
                                       <p>$26.97</p>
                                       <p>#20124</p>
