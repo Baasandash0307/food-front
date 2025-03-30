@@ -181,7 +181,7 @@ const Header = () => {
                           </TabsContent>
                           <TabsContent value="password">
                             <div>
-                              <div className="w-[380px] h-[760px] rounded-2xl bg-cyan-200">
+                              <div className="w-[380px] h-[760px] rounded-2xl pl-4 pr-4 pt-4 bg-white">
                                 <div>
                                   <div>
                                     <h1 className="text-[20px] font-bold ">
@@ -190,19 +190,19 @@ const Header = () => {
                                   </div>
 
                                   <div className="flex justify-between">
-                                    <div className="flex text-[16px] font-bold">
+                                    <div className="flex text-[16px] font-bold gap-2">
                                       <p>$26.97</p>
                                       <p>#20124</p>
                                     </div>
                                     <div>
-                                      <div className="w-[68px] h-[28px] flex justify-center font-bold items-center rounded-3xl bg-white border-1 border-red-500">
+                                      <div className="w-[75px] h-[28px] flex justify-center  items-center rounded-3xl bg-white border-1 border-red-500">
                                         Pending
                                       </div>
                                     </div>
                                   </div>
 
-                                  <div className="flex justify-between text-gray-200">
-                                    <div className="flex">
+                                  <div className="flex justify-between text-gray-500">
+                                    <div className="flex gap-2">
                                       <img src="/dish.png"></img>
                                       <p>Sunshine Stackers</p>
                                     </div>
@@ -211,8 +211,8 @@ const Header = () => {
                                     </div>
                                   </div>
 
-                                  <div className="flex justify-between text-gray-200">
-                                    <div className="flex">
+                                  <div className="flex justify-between text-gray-500">
+                                    <div className="flex gap-2">
                                       <img src="/dish.png"></img>
                                       <p>Sunshine Stackers</p>
                                     </div>
@@ -221,33 +221,33 @@ const Header = () => {
                                     </div>
                                   </div>
 
-                                  <div className="flex text-gray-200">
+                                  <div className="flex text-gray-500 gap-2">
                                     <img src="clock.png"></img>
                                     <p>2025/03/30</p>
                                   </div>
 
-                                  <div className="flex text-gray-200">
+                                  <div className="flex text-gray-500 gap-2">
                                     <img src="map.png"></img>
                                     <p>2024/12/СБД, 12-р хороо</p>
                                   </div>
 
                                   <div className="border-solid border-1 border-gray-300 mt-5"></div>
 
-                                  <div>
+                                  <div className="mt-5">
                                     <div className="flex justify-between">
-                                      <div className="flex">
-                                        <p>$26.97</p>
-                                        <p>#20124</p>
+                                      <div className="flex text-[16px] font-bold">
+                                        <p>$16.97</p>
+                                        <p>#20524</p>
                                       </div>
                                       <div>
-                                        <div className="w-[68px] h-[28px] rounded-3xl bg-gray-200">
+                                        <div className="w-[75px] h-[28px] flex justify-center items-center rounded-3xl bg-gray-100">
                                           Delivered
                                         </div>
                                       </div>
                                     </div>
 
-                                    <div className="flex justify-between">
-                                      <div className="flex">
+                                    <div className="flex justify-between text-gray-500">
+                                      <div className="flex gap-2">
                                         <img src="/dish.png"></img>
                                         <p>Sunshine Stackers</p>
                                       </div>
@@ -256,12 +256,12 @@ const Header = () => {
                                       </div>
                                     </div>
 
-                                    <div className="flex">
+                                    <div className="flex text-gray-500 gap-2">
                                       <img src="clock.png"></img>
                                       <p>2025/03/30</p>
                                     </div>
 
-                                    <div className="flex">
+                                    <div className="flex text-gray-500 gap-2">
                                       <img src="map.png"></img>
                                       <p>2024/12/СБД, 12-р хороо</p>
                                     </div>
