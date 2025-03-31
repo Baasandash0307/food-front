@@ -10,6 +10,19 @@ import {
 
 const ProductCard = () => {
   const [count, setCount] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(12.99);
+
+  const handleIncrease = () => {
+    setCount((prevCount) => prevCount + 1);
+    setTotalPrice((prevPrice) => prevPrice * 2);
+  };
+
+  const handleDecrease = () => {
+    if (count > 1) {
+      setCount((prevCount) => prevCount - 1);
+      setTotalPrice((prevPrice) => prevPrice / 2);
+    }
+  };
 
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
@@ -47,9 +60,10 @@ const ProductCard = () => {
               <div className="flex gap-10">
                 <div>
                   <img
-                    className="rounded-2xl w-[600px] h-[350px] object-cove"
+                    className="rounded-2xl w-[600px] h-[350px] object-cover"
                     src="/foodpic.png"
-                  ></img>
+                    alt="Food"
+                  />
                 </div>
                 <div>
                   <div>
@@ -57,27 +71,26 @@ const ProductCard = () => {
                       Finger food
                     </p>
                     <p className="text-[16px] mt-5 flex justify-start">
-                      Fluffy pancakes stacked with fruits, cream, syrup, and
-                      powdered sugar.
+                      Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.
                     </p>
                   </div>
 
                   <div className="justify-start grid grid-cols-2 mt-30">
                     <div>
-                      <p className="text-[20px] ">Total price</p>
-                      <p className="text-[25px] font-bold">$12.99</p>
+                      <p className="text-[20px]">Total price</p>
+                      <p className="text-[25px] font-bold">${totalPrice.toFixed(2)}</p>
                     </div>
 
                     <div className="flex items-center gap-3">
                       <button
-                        onClick={() => setCount(count > 1 ? count - 1 : 1)}
+                        onClick={handleDecrease}
                         className="border w-9 h-9 rounded-4xl cursor-pointer"
                       >
                         -
                       </button>
                       <p className="text-2xl">{count}</p>
                       <button
-                        onClick={() => setCount(count + 1)}
+                        onClick={handleIncrease}
                         className="border w-9 h-9 rounded-4xl cursor-pointer"
                       >
                         +
