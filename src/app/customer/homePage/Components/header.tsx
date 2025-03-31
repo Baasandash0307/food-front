@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/sheet";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useState } from "react";
+import { Textarea } from "@/components/ui/textarea"
 
 const Header = () => {
     const [count, setCount] = useState(1);
@@ -44,20 +45,38 @@ const Header = () => {
 
                     <div className="flex gap-4 items-center">
                         <div className="flex gap-3">
-                            <div className="w-[255px] h-[36px] text-[12px] bg-white rounded-2xl flex items-center justify-around">
-                                <img src="/vector.png" alt=""></img>
-                                <p className="text-red-500">Delivery address:</p>
-                                <input
-                                    className="text-gray-600 w-18 outline-none"
-                                    placeholder="Add location"
-                                    type="text"
-                                ></input>
-                                <img
-                                    className="w-[5px] h-[10px]"
-                                    src="/arrow.png"
-                                    alt="Arrow"
-                                ></img>
-                            </div>
+
+                            <Popover>
+                                <PopoverTrigger>
+                                    <div className="w-[255px] h-[36px] text-[12px] bg-white rounded-2xl flex items-center justify-around">
+                                        <img src="/vector.png" alt=""></img>
+                                        <p className="text-red-500">Delivery address:</p>
+                                        <input
+                                            className="text-gray-600 w-18 outline-none"
+                                            placeholder="Add location"
+                                            type="text"
+                                        ></input>
+                                        <img
+                                            className="w-[5px] h-[10px]"
+                                            src="/arrow.png"
+                                            alt="Arrow"
+                                        ></img>
+                                    </div>
+                                </PopoverTrigger>
+                                <PopoverContent className="bg-white border-0 w-[480px] h-[200px]">
+                                    <div>
+                                        <h1>Delivery address</h1>
+                                    </div>
+                                    <div>
+                                        <Textarea placeholder="Type here!" />
+                                        <div className="flex justify-end mt-5 gap-5">
+                                            <button className="rounded-[7px] border-1 border-gray-300 w-[80px] h-[40px] cursor-pointer">Cancel</button>
+                                            <button className="rounded-[7px] text-white bg-black w-[130px] h-[40px] cursor-pointer">Deliver here</button>
+                                        </div>
+                                    </div>
+                                </PopoverContent>
+                            </Popover>
+
                             <div className="flex gap-3">
                                 <Sheet>
                                     <SheetTrigger className="bg-black">
@@ -72,7 +91,7 @@ const Header = () => {
                                             </SheetTitle>
                                             <SheetDescription>
                                                 <Tabs defaultValue="account" className="mt-2">
-                                                    <TabsList className="flex justify-center text-[18px] gap-3">
+                                                    <TabsList className="flex justify-center text-[18px] w-[354px] gap-3">
                                                         <TabsTrigger
                                                             value="account"
                                                             className="w-[180px] data-[state=active]:bg-red-500 rounded-2xl data-[state=active]:text-white bg-white text-red-500"
@@ -88,7 +107,7 @@ const Header = () => {
                                                         </TabsTrigger>
                                                     </TabsList>
                                                     <TabsContent value="account">
-                                                        <div className="w-[380px] h-[400px] rounded-2xl mt-2 bg-white p-4">
+                                                        <div className="w-[350px] h-[400px] rounded-2xl mt-2 bg-white p-4">
                                                             <div>
                                                                 <p className="text-[20px] font-bold">My cart</p>
                                                             </div>
@@ -139,13 +158,13 @@ const Header = () => {
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div className="w-[360px] h-[50px] cursor-pointer border-1 border-red-500 bg-white rounded-4xl mt-5 flex justify-center items-center">
+                                                            <div className="w-[318px] h-[50px] cursor-pointer border-1 border-red-500 bg-white rounded-4xl mt-5 flex justify-center items-center">
                                                                 <button className="text-[18px] cursor-pointer text-red-500 font-bold ">
                                                                     Add food
                                                                 </button>
                                                             </div>
 
-                                                            <div className="mt-18 ml-[-16px] p-4 w-[380px] h-[370px] rounded-2xl bg-white">
+                                                            <div className="mt-18 ml-[-16px] p-4 w-[350px] h-[370px] rounded-2xl bg-white">
                                                                 <div className="">
                                                                     <p className="text-[20px] font-bold">
                                                                         Payment info
@@ -170,7 +189,7 @@ const Header = () => {
                                                                         <p>Total</p>
                                                                         <p className="font-bold">$26.97</p>
                                                                     </div>
-                                                                    <div className="w-[360px] h-[50px] cursor-pointer bg-red-500 rounded-4xl mt-20 flex justify-center items-center">
+                                                                    <div className="w-[320px] h-[50px] cursor-pointer bg-red-500 rounded-4xl mt-20 flex justify-center items-center">
                                                                         <button className="text-[18px] cursor-pointer text-white font-bold ">
                                                                             Checkout
                                                                         </button>
@@ -181,7 +200,7 @@ const Header = () => {
                                                     </TabsContent>
                                                     <TabsContent value="password">
                                                         <div>
-                                                            <div className="w-[380px] h-[760px] rounded-2xl pl-4 pr-4 pt-4 bg-white">
+                                                            <div className="w-[350px] h-[760px] rounded-2xl pl-4 pr-4 pt-4 bg-white">
                                                                 <h1 className="text-[20px] font-bold ">
                                                                     Order history
                                                                 </h1>

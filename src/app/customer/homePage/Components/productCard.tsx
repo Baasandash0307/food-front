@@ -34,12 +34,6 @@ const ProductCard = () => {
               src="foodpic.png"
               alt="Food"
             ></img>
-            <button
-              className="w-11 h-11 rounded-3xl absolute bg-white text-red-500 mt-50 ml-90 cursor-pointer"
-              type="submit"
-            >
-              +
-            </button>
           </div>
           <div className="w-[460px]">
             <div className="flex justify-between ml-2 items-center">
