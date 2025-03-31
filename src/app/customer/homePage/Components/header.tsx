@@ -68,7 +68,7 @@ const Header = () => {
                                         <h1>Delivery address</h1>
                                     </div>
                                     <div>
-                                        <Textarea placeholder="Type here!" />
+                                        <Textarea placeholder="Type here!" className="h-[80px]" />
                                         <div className="flex justify-end mt-5 gap-5">
                                             <button className="rounded-[7px] border-1 border-gray-300 w-[80px] h-[40px] cursor-pointer">Cancel</button>
                                             <button className="rounded-[7px] text-white bg-black w-[130px] h-[40px] cursor-pointer">Deliver here</button>
