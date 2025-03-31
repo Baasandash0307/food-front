@@ -1,20 +1,11 @@
 "use client";
 
-import { useState } from "react";
 import Categories from "./customer/homePage/Components/categories";
 import Card from "./customer/homePage/Components/card";
 import Footer from "./customer/homePage/Components/footer";
 import Background from "./customer/homePage/Components/background";
 
 export default function Home() {
-  // const [formValues, setFormValues] = useState({
-  //   email: "",
-  //   phoneNumber: "",
-  //   password: "",
-  //   ConfirmPassword: "",
-  //   date: "",
-  //   image: "",
-  // });
 
   return (
     <div className="w-full h-screen bg-neutral-700">
