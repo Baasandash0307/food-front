@@ -14,7 +14,7 @@ const ProductCard = () => {
 
   const handleIncrease = () => {
     setCount((prevCount) => prevCount + 1);
-    setTotalPrice((prevPrice) => prevPrice * 2);
+    setTotalPrice((prevPrice) => prevPrice + prevPrice);
   };
 
   const handleDecrease = () => {
