@@ -33,7 +33,7 @@ const ProductCard = () => {
               className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover"
               src="foodpic.png"
               alt="Food"
-            ></img> 
+            ></img>
           </div>
           <div className="w-[460px]">
             <div className="flex justify-between ml-2 items-center">
