@@ -6,7 +6,6 @@ import Footer from "./customer/homePage/Components/footer";
 import Background from "./customer/homePage/Components/background";
 
 export default function Home() {
-
   return (
     <div className="w-full h-screen bg-neutral-700">
       <div>
@@ -66,8 +65,9 @@ export default function Home() {
           <div className="w-full h-20 bg-red-500 overflow-hidden whitespace-nowrap flex items-center">
             <div className="inline-block animate-scroll text-white text-[30px] font-bold">
               Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp; •
-              &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp; •
-              &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered &nbsp;
+              &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast delivered
+              &nbsp; • &nbsp; Fresh fast delivered &nbsp; • &nbsp; Fresh fast
+              delivered &nbsp;
             </div>
           </div>
 
