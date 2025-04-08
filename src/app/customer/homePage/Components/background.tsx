@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Background = () => {
+const   Background = () => {
     return (
         <div>
             <img src="/BG.png"></img>

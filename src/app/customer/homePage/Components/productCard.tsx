@@ -4,7 +4,6 @@ import {
   DialogContent,
   DialogDescription,
   DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 
@@ -65,14 +64,17 @@ const ProductCard = () => {
                       Finger food
                     </p>
                     <p className="text-[16px] mt-5 flex justify-start">
-                      Fluffy pancakes stacked with fruits, cream, syrup, and powdered sugar.
+                      Fluffy pancakes stacked with fruits, cream, syrup, and
+                      powdered sugar.
                     </p>
                   </div>
 
                   <div className="justify-start grid grid-cols-2 mt-30">
                     <div>
                       <p className="text-[20px]">Total price</p>
-                      <p className="text-[25px] font-bold">${totalPrice.toFixed(2)}</p>
+                      <p className="text-[25px] font-bold">
+                        ${totalPrice.toFixed(2)}
+                      </p>
                     </div>
 
                     <div className="flex items-center gap-3">

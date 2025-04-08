@@ -4,8 +4,17 @@ import Categories from "./customer/homePage/Components/categories";
 import Card from "./customer/homePage/Components/card";
 import Footer from "./customer/homePage/Components/footer";
 import Background from "./customer/homePage/Components/background";
+import { log } from "console";
+import { BASE_URL } from "@/constants";
 
 export default function Home() {
+  // const response = await fetch(`${BASE_URL}/foods`, {
+  //   headers: {
+  //     "Content-Type": "application/json",
+  //   },
+  // });
+  // const foods = await response.json();
+
   return (
     <div className="w-full h-screen bg-neutral-700">
       <div>
