@@ -1,6 +1,5 @@
 import { BASE_URL } from "@/constants";
 import Card from "./card";
-import Categories from "./categories";
 
 export const FoodList = async () => {
   const response = await fetch(`${BASE_URL}/foods`, {

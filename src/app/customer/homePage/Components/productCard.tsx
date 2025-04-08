@@ -53,13 +53,11 @@ const ProductCard = () => {
           <DialogHeader>
             <DialogDescription>
               <div className="flex gap-10">
-                <div>
-                  <img
-                    className="rounded-2xl w-[600px] h-[350px] object-cover"
-                    src="/foodpic.png"
-                    alt="Food"
-                  />
-                </div>
+                <img
+                  className="rounded-2xl w-[600px] h-[350px] object-cover"
+                  src="/foodpic.png"
+                  alt="Food"
+                />
                 <div>
                   <div>
                     <p className="flex justify-start mr-5 text-[29px] font-bold text-red-500">
@@ -106,7 +104,7 @@ const ProductCard = () => {
             </DialogDescription>
           </DialogHeader>
         </DialogContent>
-      </Dialog>
+      </Dialog>                         
     </div>
   );
 };
