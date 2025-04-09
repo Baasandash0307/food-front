@@ -8,6 +8,7 @@ import {
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import { DialogTitle } from "@radix-ui/react-dialog";
 
 const ProductCard = () => {
   const [count, setCount] = useState(1);
@@ -38,73 +39,77 @@ const ProductCard = () => {
           </div>
           <div className="w-[460px]">
             <div className="flex justify-between ml-2 items-center">
-              <p className="text-red-500 text-[25px] font-bold">Finger food</p>
-              <p className="text-[18px] font-bold">$12.99</p>
+              <div className="text-red-500 text-[25px] font-bold">
+                Finger food
+              </div>
+              <div className="text-[18px] font-bold">$12.99</div>
             </div>
           </div>
           <div className="w-[470px]">
-            <p className="text-[14px] ml-2">
+            <div className="text-[14px] ml-2">
               Fluffy pancakes stacked with fruits, cream, syrup, and powdered
               sugar.
-            </p>
+            </div>
           </div>
         </DialogTrigger>
         <DialogContent>
-          <DialogHeader>
-            <DialogDescription>
-              <div className="flex gap-10">
-                <img
-                  className="rounded-2xl w-[600px] h-[350px] object-cover"
-                  src="/foodpic.png"
-                  alt="Food"
-                />
-                <div>
+          <DialogTitle>
+            <DialogHeader>
+              <div>
+                <div className="flex gap-10">
+                  <img
+                    className="rounded-2xl w-[600px] h-[350px] object-cover"
+                    src="/foodpic.png"
+                    alt="Food"
+                  />
                   <div>
-                    <p className="flex justify-start mr-5 text-[29px] font-bold text-red-500">
-                      Finger food
-                    </p>
-                    <p className="text-[16px] mt-5 flex justify-start">
-                      Fluffy pancakes stacked with fruits, cream, syrup, and
-                      powdered sugar.
-                    </p>
-                  </div>
-
-                  <div className="justify-start grid grid-cols-2 mt-30">
                     <div>
-                      <p className="text-[20px]">Total price</p>
-                      <p className="text-[25px] font-bold">
-                        ${totalPrice.toFixed(2)}
-                      </p>
+                      <div className="flex justify-start mr-5 text-[29px] font-bold text-red-500">
+                        Finger food
+                      </div>
+                      <div className="text-[16px] mt-5 flex justify-start">
+                        Fluffy pancakes stacked with fruits, cream, syrup, and
+                        powdered sugar.
+                      </div>
                     </div>
 
-                    <div className="flex items-center gap-3">
-                      <button
-                        onClick={handleDecrease}
-                        className="border w-9 h-9 rounded-4xl cursor-pointer"
-                      >
-                        -
-                      </button>
-                      <p className="text-2xl">{count}</p>
-                      <button
-                        onClick={handleIncrease}
-                        className="border w-9 h-9 rounded-4xl cursor-pointer"
-                      >
-                        +
-                      </button>
-                    </div>
+                    <div className="justify-start grid grid-cols-2 mt-30">
+                      <div>
+                        <div className="text-[20px]">Total price</div>
+                        <div className="text-[25px] font-bold">
+                          ${totalPrice.toFixed(2)}
+                        </div>
+                      </div>
 
-                    <div className="w-[275px] h-[40px] bg-black mt-5 border flex justify-center rounded-4xl">
-                      <button className="text-white text-[15px] cursor-pointer">
-                        Add to cart
-                      </button>
+                      <div className="flex items-center gap-3">
+                        <button
+                          onClick={handleDecrease}
+                          className="border w-9 h-9 rounded-4xl cursor-pointer"
+                        >
+                          -
+                        </button>
+                        <div className="text-2xl">{count}</div>
+                        <button
+                          onClick={handleIncrease}
+                          className="border w-9 h-9 rounded-4xl cursor-pointer"
+                        >
+                          +
+                        </button>
+                      </div>
+
+                      <div className="w-[275px] h-[40px] bg-black mt-5 border flex justify-center rounded-4xl">
+                        <button className="text-white text-[15px] cursor-pointer">
+                          Add to cart
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </DialogDescription>
-          </DialogHeader>
+            </DialogHeader>
+          </DialogTitle>
         </DialogContent>
-      </Dialog>                         
+      </Dialog>
     </div>
   );
 };
