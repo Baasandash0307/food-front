@@ -4,7 +4,6 @@ import { useState } from "react";
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
   DialogHeader,
   DialogTrigger,
 } from "@/components/ui/dialog";

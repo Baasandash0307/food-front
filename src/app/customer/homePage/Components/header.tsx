@@ -49,7 +49,7 @@ const Header = () => {
                 <PopoverTrigger>
                   <div className="w-[255px] h-[36px] text-[12px] bg-white rounded-2xl flex items-center justify-around">
                     <img src="/vector.png" alt=""></img>
-                    <p className="text-red-500">Delivery address:</p>
+                    <div className="text-red-500">Delivery address:</div>
                     <input
                       className="text-gray-600 w-18 outline-none"
                       placeholder="Add location"
@@ -64,7 +64,7 @@ const Header = () => {
                 </PopoverTrigger>
                 <PopoverContent className="bg-white border-0 w-[480px] h-[200px]">
                   <div>
-                    <h1>Delivery address</h1>
+                    <div>Delivery address</div>
                   </div>
                   <div>
                     <Textarea placeholder="Type here!" className="h-[80px]" />
@@ -112,7 +112,9 @@ const Header = () => {
                           <TabsContent value="account">
                             <div className="w-[350px] h-[400px] rounded-2xl mt-2 bg-white p-4">
                               <div>
-                                <p className="text-[20px] font-bold">My cart</p>
+                                <div className="text-[20px] font-bold">
+                                  My cart
+                                </div>
                               </div>
                               <div className="grid grid-cols-2 mt-5">
                                 <div className="w-[140px] h-[110px]">
@@ -123,11 +125,11 @@ const Header = () => {
                                 </div>
                                 <div>
                                   <div>
-                                    <h1>Sunshine Stackers</h1>
-                                    <p>
+                                    <div>Sunshine Stackers</div>
+                                    <div>
                                       Fluffy pancakes stacked with fruits,
                                       cream, syrup, and powdered sugar.
-                                    </p>
+                                    </div>
                                   </div>
                                   <div>
                                     <div className="justify-start grid grid-cols-2 mt-25 gap-10">
@@ -140,7 +142,7 @@ const Header = () => {
                                         >
                                           -
                                         </button>
-                                        <p className="text-2xl">{count}</p>
+                                        <div className="text-2xl">{count}</div>
                                         <button
                                           onClick={() => setCount(count + 1)}
                                           className=" w-9 h-9  cursor-pointer"
@@ -150,12 +152,12 @@ const Header = () => {
                                       </div>
 
                                       <div>
-                                        <p className="text-[10px] ">
+                                        <div className="text-[10px] ">
                                           Total price
-                                        </p>
-                                        <p className="text-[15px] font-bold">
+                                        </div>
+                                        <div className="text-[15px] font-bold">
                                           $12.99
-                                        </p>
+                                        </div>
                                       </div>
                                     </div>
                                   </div>
@@ -169,28 +171,28 @@ const Header = () => {
 
                               <div className="mt-18 ml-[-16px] p-4 w-[350px] h-[370px] rounded-2xl bg-white">
                                 <div className="">
-                                  <p className="text-[20px] font-bold">
+                                  <div className="text-[20px] font-bold">
                                     Payment info
-                                  </p>
+                                  </div>
                                 </div>
 
                                 <div className="mt-5">
                                   <div className="text-[16px]">
                                     <div className="flex justify-between">
-                                      <p>Items</p>
-                                      <p className="font-bold">$25.98</p>
+                                      <div>Items</div>
+                                      <div className="font-bold">$25.98</div>
                                     </div>
                                     <div className="flex justify-between mt-1">
-                                      <p>Shipping</p>
-                                      <p className="font-bold">$0.99</p>
+                                      <div>Shipping</div>
+                                      <div className="font-bold">$0.99</div>
                                     </div>
                                   </div>
 
                                   <div className="border-solid border-1 border-gray-300 mt-5"></div>
 
                                   <div className="flex justify-between text-[16px] mt-5">
-                                    <p>Total</p>
-                                    <p className="font-bold">$26.97</p>
+                                    <div>Total</div>
+                                    <div className="font-bold">$26.97</div>
                                   </div>
                                   <div className="w-[320px] h-[50px] cursor-pointer bg-red-500 rounded-4xl mt-20 flex justify-center items-center">
                                     <button className="text-[18px] cursor-pointer text-white font-bold ">
@@ -204,14 +206,14 @@ const Header = () => {
                           <TabsContent value="password">
                             <div>
                               <div className="w-[350px] h-[760px] rounded-2xl pl-4 pr-4 pt-4 bg-white">
-                                <h1 className="text-[20px] font-bold ">
+                                <div className="text-[20px] font-bold ">
                                   Order history
-                                </h1>
+                                </div>
                                 <div className="ml-2">
                                   <div className="flex justify-between mt-5">
                                     <div className="flex text-[16px] font-bold gap-2">
-                                      <p>$26.97</p>
-                                      <p>#20124</p>
+                                      <div>$26.97</div>
+                                      <div>#20124</div>
                                     </div>
                                     <div>
                                       <div className="w-[75px] h-[28px] flex justify-center  items-center rounded-3xl bg-white border-1 border-red-500">
@@ -223,31 +225,31 @@ const Header = () => {
                                   <div className="flex justify-between mt-4 text-gray-500">
                                     <div className="flex gap-2">
                                       <img src="/dish.png"></img>
-                                      <p>Sunshine Stackers</p>
+                                      <div>Sunshine Stackers</div>
                                     </div>
                                     <div>
-                                      <p>x 1</p>
+                                      <div>x 1</div>
                                     </div>
                                   </div>
 
                                   <div className="flex justify-between text-gray-500">
                                     <div className="flex gap-2">
                                       <img src="/dish.png"></img>
-                                      <p>Sunshine Stackers</p>
+                                      <div>Sunshine Stackers</div>
                                     </div>
                                     <div>
-                                      <p>x 1</p>
+                                      <div>x 1</div>
                                     </div>
                                   </div>
 
                                   <div className="flex text-gray-500 gap-2">
                                     <img src="clock.png"></img>
-                                    <p>2025/03/30</p>
+                                    <div>2025/03/30</div>
                                   </div>
 
                                   <div className="flex text-gray-500 gap-2">
                                     <img src="map.png"></img>
-                                    <p>2024/12/СБД, 12-р хороо</p>
+                                    <div>2024/12/СБД, 12-р хороо</div>
                                   </div>
 
                                   <div className="border-solid border-1 border-gray-300 mt-5"></div>
@@ -255,8 +257,8 @@ const Header = () => {
                                   <div className="mt-5">
                                     <div className="flex justify-between">
                                       <div className="flex text-[16px] font-bold">
-                                        <p>$16.97</p>
-                                        <p>#20524</p>
+                                        <div>$16.97</div>
+                                        <div>#20524</div>
                                       </div>
                                       <div>
                                         <div className="w-[75px] h-[28px] flex justify-center items-center rounded-3xl bg-gray-100">
@@ -268,21 +270,21 @@ const Header = () => {
                                     <div className="flex justify-between text-gray-500 mt-4">
                                       <div className="flex gap-2">
                                         <img src="/dish.png"></img>
-                                        <p>Sunshine Stackers</p>
+                                        <div>Sunshine Stackers</div>
                                       </div>
                                       <div>
-                                        <p>x 1</p>
+                                        <div>x 1</div>
                                       </div>
                                     </div>
 
                                     <div className="flex text-gray-500 gap-2">
                                       <img src="clock.png"></img>
-                                      <p>2025/03/30</p>
+                                      <div>2025/03/30</div>
                                     </div>
 
                                     <div className="flex text-gray-500 gap-2">
                                       <img src="map.png"></img>
-                                      <p>2024/12/СБД, 12-р хороо</p>
+                                      <div>2024/12/СБД, 12-р хороо</div>
                                     </div>
                                   </div>
                                 </div>
@@ -305,9 +307,9 @@ const Header = () => {
                   </PopoverTrigger>
                   <Link href={"customer/loginPage/signup"}>
                     <PopoverContent className="bg-white cursor-pointer flex justify-center border-0">
-                      <p className="border-1 w-[220px] h-[35px] items-center text-[15px] font-bold rounded-2xl bg-red-500 text-white flex justify-center">
+                      <div className="border-1 w-[220px] h-[35px] items-center text-[15px] font-bold rounded-2xl bg-red-500 text-white flex justify-center">
                         Login
-                      </p>
+                      </div>
                     </PopoverContent>
                   </Link>
                 </Popover>
