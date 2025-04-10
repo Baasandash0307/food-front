@@ -62,7 +62,7 @@ const Header = () => {
                     ></img>
                   </div>
                 </PopoverTrigger>
-                
+
                 <PopoverContent className="bg-white border-0 w-[480px] h-[200px]">
                   <div>
                     <div>Delivery address</div>
@@ -88,13 +88,13 @@ const Header = () => {
                       <img className="w-4 h-4" src="/cart.png" alt="Cart" />
                     </div>
                   </SheetTrigger>
-                  
+
                   <SheetContent className="bg-neutral-700 rounded-tl-3xl rounded-bl-3xl">
                     <SheetHeader>
                       <SheetTitle className=" text-white text-2xl flex">
                         Order detail
                       </SheetTitle>
-                      <SheetDescription>
+                      <div>
                         <Tabs defaultValue="account" className="mt-2">
                           <TabsList className="flex justify-center text-[18px] w-[354px] gap-3">
                             <TabsTrigger
@@ -294,7 +294,7 @@ const Header = () => {
                             </div>
                           </TabsContent>
                         </Tabs>
-                      </SheetDescription>
+                      </div>
                     </SheetHeader>
                   </SheetContent>
                 </Sheet>
