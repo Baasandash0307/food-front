@@ -70,9 +70,6 @@ const Header = () => {
                   <div>
                     <Textarea placeholder="Type here!" className="h-[80px]" />
                     <div className="flex justify-end mt-5 gap-5">
-                      <button className="rounded-[7px] border-1 border-gray-300 w-[80px] h-[40px] cursor-pointer">
-                        Cancel
-                      </button>
                       <button className="rounded-[7px] text-white bg-black w-[130px] h-[40px] cursor-pointer">
                         Deliver here
                       </button>
@@ -112,7 +109,7 @@ const Header = () => {
                             </TabsTrigger>
                           </TabsList>
                           <TabsContent value="account">
-                            <div className="w-[350px] h-[400px] rounded-2xl mt-2 bg-white p-4">
+                            <div className="w-[350px] h-[450px] rounded-2xl mt-2 bg-white p-4">
                               <div>
                                 <div className="text-[20px] font-bold">
                                   My cart
