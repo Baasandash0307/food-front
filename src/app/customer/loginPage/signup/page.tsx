@@ -14,7 +14,7 @@ const LoginPage = () => {
 
     const handleSubmit = () => {
         if (!validateEmail(email)) {
-            setError("Invalid email. Use a format like example@email.com");
+            setError("Буруу байна. Жишээ нь example@email.com");
             return;
         }
         setError("");
