@@ -22,7 +22,7 @@ export const FoodList = async () => {
 
           <div className="mt-10 bg-neutral-700 h-[1000px]">
             <div className="flex justify-center">
-              <div className="w-[1700px] grid grid-cols-3 grid-rows-2">
+              <div className="w-[1700px] gap-10 grid grid-cols-3 grid-rows-2">
 
                 <ProductCard />
 
