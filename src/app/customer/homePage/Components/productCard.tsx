@@ -13,7 +13,7 @@ import { BASE_URL } from "@/constants";
 const ProductCard = ({ food }) => {
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(12.99);
-  
+
   const handleIncrease = () => {
     setCount((prevCount) => prevCount + 1);
     setTotalPrice((prevPrice) => prevPrice + 12.99); // Fixed logic
@@ -26,7 +26,7 @@ const ProductCard = ({ food }) => {
     }
   };
 
-  
+
 
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
@@ -51,7 +51,7 @@ const ProductCard = ({ food }) => {
             <div className="text-[14px] ml-2">{food.description}</div>
           </div>
         </DialogTrigger>
-        <DialogContent>
+        <DialogContent className="h-[450px]">
           <DialogTitle>
             <DialogHeader>
               <div>
