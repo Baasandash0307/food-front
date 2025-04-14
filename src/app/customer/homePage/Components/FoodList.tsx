@@ -13,7 +13,7 @@ export const FoodList = async () => {
   return (
     <>
       {foods.categories.map((el) => (
-        <div key={foods.categories} className="bg-neutral-700">
+        <div className="bg-neutral-700">
           <div className="flex justify-center">
             <div className="w-[1700px]">
               <p className="text-[30px]  text-white font-bold">{el.name}</p>

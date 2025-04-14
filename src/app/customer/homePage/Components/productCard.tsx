@@ -29,7 +29,7 @@ const ProductCard = () => {
 
   useEffect(() => {
     const fetchFoods = async () => {
-      const response = await fetch(`${BASE_URL}/foods`, {
+      const response = await fetch(`${BASE_URL}/categories/with-foods`, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -45,7 +45,7 @@ const ProductCard = () => {
 
   return (
     <>
-      {foodList.foods.map((el) => (
+      {foodList.categories.map((food) => (
         <div
           className="w-[500px] h-[450px] bg-white rounded-xl relative"
         >
@@ -61,7 +61,7 @@ const ProductCard = () => {
               <div className="w-[460px]">
                 <div className="flex justify-between ml-2 items-center">
                   <div className="text-red-500 text-[25px] font-bold">
-                    {/* {el.foodName} */}
+                    {food.foods.foodName}
                   </div>
                   <div className="text-[18px] font-bold">$12.99</div>
                 </div>
