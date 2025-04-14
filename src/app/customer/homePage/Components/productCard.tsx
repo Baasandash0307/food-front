@@ -14,7 +14,7 @@ const ProductCard = () => {
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(12.99);
   const [foodList, setFoodList] = useState<{ categories: any[] }>({ categories: [] });
-
+  console.log(foodList.categories)
   const handleIncrease = () => {
     setCount((prevCount) => prevCount + 1);
     setTotalPrice((prevPrice) => prevPrice + 12.99); // Fixed logic
