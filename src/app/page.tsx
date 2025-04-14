@@ -1,3 +1,4 @@
+'use client'
 import Categories from "./customer/homePage/Components/categories";
 import Footer from "./customer/homePage/Components/footer";
 import Background from "./customer/homePage/Components/background";

@@ -1,18 +1,29 @@
+'use client'
+
 import { BASE_URL } from "@/constants";
 import ProductCard from "./productCard";
+import { useEffect, useState } from "react";
 
-export const FoodList = async () => {
-  const response = await fetch(`${BASE_URL}/categories/with-foods`, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  const foods = await response.json();
-  // console.log(foods)
+export const FoodList = () => {
 
+  const [categories, setCategories] = useState<any[]>([]);
+  useEffect(() => {
+    const fetchFoods = async () => {
+      const response = await fetch(`${BASE_URL}/categories/with-foods`, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const { categories } = await response.json();
+      setCategories(categories);
+
+    };
+
+    fetchFoods();
+  }, []);
   return (
     <>
-      {foods.categories.map((el) => (
+      {categories?.map((el) => (
         <div className="bg-neutral-700">
           <div className="flex justify-center">
             <div className="w-[1700px]">
@@ -24,7 +35,15 @@ export const FoodList = async () => {
             <div className="flex justify-center">
               <div className="w-[1700px] gap-10 grid grid-cols-3 grid-rows-2">
 
-                <ProductCard />
+
+                {el.foods.map(food => (
+
+                  <ProductCard food={food} />
+                ))}
+
+
+
+
 
               </div>
             </div>
