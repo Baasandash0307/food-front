@@ -8,31 +8,28 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
-import { BASE_URL } from "@/constants";
 
 const ProductCard = ({ food }) => {
   const [count, setCount] = useState(1);
-  const [totalPrice, setTotalPrice] = useState(12.99);
+  const [totalPrice, setTotalPrice] = useState(food.price);
 
   const handleIncrease = () => {
     setCount((prevCount) => prevCount + 1);
-    setTotalPrice((prevPrice) => prevPrice + 12.99); // Fixed logic
+    setTotalPrice((prevPrice: any) => prevPrice + food.price);
   };
 
   const handleDecrease = () => {
     if (count > 1) {
       setCount((prevCount) => prevCount - 1);
-      setTotalPrice((prevPrice) => prevPrice - 12.99); // Fixed logic
+      setTotalPrice((prevPrice: number) => prevPrice - food.price);
     }
   };
-
-
 
   return (
     <div className="w-[500px] h-[450px] bg-white rounded-xl relative">
       <Dialog>
         <DialogTrigger className="ml-3.5 cursor-pointer">
-          <div className="flex justify-center items-center">
+          <div className="flex items-center">
             <img
               className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover"
               src="foodpic.png"
@@ -48,7 +45,7 @@ const ProductCard = ({ food }) => {
             </div>
           </div>
           <div className="w-[470px]">
-            <div className="text-[14px] ml-2">{food.description}</div>
+            <div className="text-[14px] ml-1">{food.description}</div>
           </div>
         </DialogTrigger>
         <DialogContent className="h-[450px]">
@@ -107,7 +104,6 @@ const ProductCard = ({ food }) => {
         </DialogContent>
       </Dialog>
     </div>
-
   );
 };
 
