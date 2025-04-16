@@ -32,7 +32,7 @@ const ProductCard = ({ food }) => {
           <div className="flex items-center">
             <img
               className="w-[470px] h-[300px] mt-4 p-1 rounded-2xl object-cover"
-              src="foodpic.png"
+              src={food.image}
               alt="Food"
             />
           </div>
@@ -48,14 +48,14 @@ const ProductCard = ({ food }) => {
             <div className="text-[14px] ml-1">{food.description}</div>
           </div>
         </DialogTrigger>
-        <DialogContent className="h-[450px]">
+        <DialogContent className="h-[480px]">
           <DialogTitle>
             <DialogHeader>
               <div>
                 <div className="flex gap-10">
                   <img
-                    className="rounded-2xl w-[600px] h-[350px] object-cover"
-                    src="/foodpic.png"
+                    className="rounded-2xl w-[300px] h-[350px] object-cover"
+                    src={food.image}
                     alt="Food"
                   />
                   <div>

@@ -3,6 +3,7 @@
 import { BASE_URL } from "@/constants";
 import ProductCard from "./productCard";
 import { useEffect, useState } from "react";
+import { log } from "console";
 
 export const FoodList = () => {
 
@@ -16,6 +17,7 @@ export const FoodList = () => {
       });
       const { categories } = await response.json();
       setCategories(categories);
+      console.log(categories);
 
     };
 
