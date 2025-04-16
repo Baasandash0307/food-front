@@ -49,7 +49,7 @@ const ProductCard = ({ food }) => {
             <div className="text-[14px] ml-1">{food.description}</div>
           </div>
         </DialogTrigger>
-        <DialogContent className="h-[480px]">
+        <DialogContent className="h-[480px] w-[750px]">
           <DialogTitle>
             <DialogHeader>
               <div>
