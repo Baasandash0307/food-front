@@ -304,7 +304,7 @@ const Header = () => {
                       alt="Person"
                     ></img>
                   </PopoverTrigger>
-                  <Link href={"customer/loginPage/signup"}>
+                  <Link href={"customer/signup"}>
                     <PopoverContent className="bg-white cursor-pointer flex justify-center border-0">
                       <div className="border-1 w-[220px] h-[35px] items-center text-[15px] font-bold rounded-2xl bg-red-500 text-white flex justify-center">
                         Login

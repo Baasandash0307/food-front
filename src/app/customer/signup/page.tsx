@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import Link from "next/link";
 
 const LoginPage = () => {
     const [email, setEmail] = useState("");
@@ -49,7 +50,9 @@ const LoginPage = () => {
                     </div>
                     <div className="flex flex-row justify-center mt-8 gap-3">
                         <p className="text-gray-400">Already have an account?</p>
-                        <button className="text-blue-400 cursor-pointer" type="button">Log in</button>
+                        <Link href="/customer/login">
+                            <button className="text-blue-400 cursor-pointer" type="button">Log in</button>
+                        </Link>
                     </div>
                 </div>
             </div>
