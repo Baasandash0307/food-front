@@ -8,6 +8,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { DialogTitle } from "@radix-ui/react-dialog";
+import Image from "next/image";
 
 const ProductCard = ({ food }) => {
   const [count, setCount] = useState(1);
@@ -53,8 +54,10 @@ const ProductCard = ({ food }) => {
             <DialogHeader>
               <div>
                 <div className="flex gap-10">
-                  <img
-                    className="rounded-2xl w-[300px] h-[350px] object-cover"
+                  <Image
+                  width={300}
+                  height={350}
+                    className="rounded-2xl w-auto  h-auto object-cover"
                     src={food.image}
                     alt="Food"
                   />
