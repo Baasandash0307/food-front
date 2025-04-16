@@ -55,8 +55,8 @@ const ProductCard = ({ food }) => {
               <div>
                 <div className="flex gap-10">
                   <Image
-                  width={300}
-                  height={350}
+                    width={300}
+                    height={350}
                     className="rounded-2xl w-auto  h-auto object-cover"
                     src={food.image}
                     alt="Food"
