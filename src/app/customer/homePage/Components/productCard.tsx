@@ -77,7 +77,7 @@ const ProductCard = ({ food }) => {
                         </div>
                       </div>
 
-                      <div className="flex items-center gap-3">
+                      <div className="flex justify-center items-center gap-3">
                         <button
                           onClick={handleDecrease}
                           className="border w-9 h-9 rounded-4xl cursor-pointer"
