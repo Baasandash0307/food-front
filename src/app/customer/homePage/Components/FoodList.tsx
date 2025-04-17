@@ -38,7 +38,7 @@ export const FoodList = () => {
               <div className="w-[1700px] gap-10 grid grid-cols-3 grid-rows-2">
 
 
-                {el.foods.map(food => (
+                {el.foods.map((food: any) => (
 
                   <ProductCard food={food} />
                 ))}
