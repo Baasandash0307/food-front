@@ -15,7 +15,7 @@ const LoginPage = () => {
 
     const handleSubmit = () => {
         if (!validateEmail(email)) {
-            setError("Буруу байна. Жишээ нь example@email.com");
+            setError("Буруу байна.");
             return;
         }
         setError("");
@@ -43,8 +43,8 @@ const LoginPage = () => {
 
                         <input
                             className="w-full h-[36px] border border-gray-200 outline-0 rounded-[5px] p-2"
-                            type="password"
-                            placeholder="password"
+                            type="email"
+                            placeholder="Enter your email here..."
                         />
 
                         <Link href="/customer/resetPass">

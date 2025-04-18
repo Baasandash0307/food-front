@@ -51,7 +51,6 @@ const LoginPage = () => {
                             <button className="text-[14px] underline cursor-pointer">Forgot Password ?</button>
                         </Link>
 
-                        {error && <p className="text-red-500 text-sm">{error}</p>}
                         <button
                             className={`w-full h-[36px] text-white outline-0 cursor-pointer rounded-[5px] ${email ? "bg-black" : "bg-gray-300"}`}
                             type="button"
