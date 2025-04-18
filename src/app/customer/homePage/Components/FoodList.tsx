@@ -4,6 +4,7 @@ import { BASE_URL } from "@/constants";
 import ProductCard from "./productCard";
 import { useEffect, useState } from "react";
 import { log } from "console";
+import Navigate from "@/app/admin/components/navigation";
 
 export const FoodList = () => {
   const [categories, setCategories] = useState<any[]>([]);
@@ -23,7 +24,7 @@ export const FoodList = () => {
   }, []);
   return (
     <>
-      {categories?.map((el) => (
+      {categories?.slice(0,4).map((el) => (
         <div className="bg-neutral-700">
           <div className="flex justify-center">
             <div className="w-[1700px]">
