@@ -24,7 +24,7 @@ export const FoodList = () => {
   }, []);
   return (
     <>
-      {categories?.slice(0,4).map((el) => (
+      {categories?.slice(0, 4).map((el) => (
         <div className="bg-neutral-700">
           <div className="flex justify-center">
             <div className="w-[1700px]">

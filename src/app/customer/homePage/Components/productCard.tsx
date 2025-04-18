@@ -10,7 +10,18 @@ import {
 import { DialogTitle } from "@radix-ui/react-dialog";
 import Image from "next/image";
 
-const ProductCard = ({ food }) => {
+interface Food {
+  foodName: string;
+  description: string;
+  image: string;
+  price: number;
+}
+
+interface ProductCardProps {
+  food: Food;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({ food }) => {
   const [count, setCount] = useState(1);
   const [totalPrice, setTotalPrice] = useState(food.price);
 
