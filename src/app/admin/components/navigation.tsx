@@ -29,9 +29,9 @@ const Navigate = () => {
     switch (activeButton) {
       case "menu":
         return (
-          <div className="ml-25 mt-10 bg-neutral-200 h-auto p-5 rounded-3xl">
+          <div className="ml-15 mr-20 mt-10 bg-neutral-200 h-auto p-5 rounded-3xl">
             <div className="w-full ml-3">
-              <div className="flex justify-end">
+              <div className="flex justify-end mr-5">
                 <Avatar>
                   <AvatarImage src="https://github.com/shadcn.png" />
                 </Avatar>
@@ -59,7 +59,7 @@ const Navigate = () => {
               </div>
 
               {categories?.slice(0, 4).map((el) => (
-                <div key={el.name} className="mb-16">
+                <div key={el.name} className="mb-16 mr-5">
                   <p className="text-[30px] font-bold">{el.name}</p>
                   <div className="grid grid-cols-3 gap-6 mt-5">
                     {el.foods.map((food: any) => (
@@ -67,11 +67,18 @@ const Navigate = () => {
                         key={food.foodName}
                         className="border border-neutral-400 h-[450px] rounded-2xl overflow-hidden"
                       >
-                        <img
-                          className="w-full h-[300px] object-cover p-1 rounded-t-2xl"
-                          src={food.image}
-                          alt="Food"
-                        />
+                        <div className="relative">
+                          <img
+                            className="w-full h-[300px] object-cover p-1 rounded-t-2xl"
+                            src={food.image}
+                            alt="Food"
+                          />
+                          <Button
+                            className="absolute bottom-3 right-3 bg-white text-red-500 text-xs px-3 py-1 rounded-full shadow-md hover:bg-gray-800"
+                          >
+                            Edit
+                          </Button>
+                        </div>
                         <div className="p-3">
                           <div className="flex justify-between items-center mb-2">
                             <p className="text-red-500 text-[25px] font-bold">
@@ -94,7 +101,7 @@ const Navigate = () => {
         return (
           <div className="ml-25 mt-10 bg-neutral-200 h-[400px] p-5 rounded-3xl">
             <p className="text-[30px] font-bold mb-3">Orders</p>
-            <p>This is where orders will be listed.</p>
+            <p>asdasdasdasd</p>
           </div>
         );
 
@@ -102,7 +109,7 @@ const Navigate = () => {
         return (
           <div className="ml-25 mt-10 bg-neutral-200 h-[400px] p-5 rounded-3xl">
             <p className="text-[30px] font-bold mb-3">Settings</p>
-            <p>This is the settings page.</p>
+            <p>asdasdasdasd</p>
           </div>
         );
 
