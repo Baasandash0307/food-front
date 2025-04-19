@@ -138,6 +138,8 @@ const Navigate = () => {
           </button>
         </div>
 
+        
+
         <div className="flex justify-center mt-10">
           <div className="flex flex-col gap-5">
             <button
