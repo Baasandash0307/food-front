@@ -104,7 +104,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ food }) => {
                         </button>
                       </div>
 
-                      <div className="w-[275px] h-[40px] bg-black mt-5 border flex justify-center rounded-4xl">
+                      <div className="w-[230px] h-[40px] bg-black mt-5 border flex justify-center rounded-4xl">
                         <button className="text-white text-[15px] cursor-pointer">
                           Add to cart
                         </button>
